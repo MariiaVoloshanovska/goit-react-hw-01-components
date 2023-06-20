@@ -17,4 +17,4 @@ export const FriendList = ({ friends }) => {
       ))}
     </ul>
   );
-};
+}; // What am I doing right now?))
