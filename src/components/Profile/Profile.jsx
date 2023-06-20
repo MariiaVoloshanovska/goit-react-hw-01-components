@@ -1,7 +1,5 @@
-// import propTypes from 'prop-types'; 
-// import css from "./Profile.module.css";
-//import {username, tag, location, avatar, followers, views, likes} from "user.json";
-
+import propTypes from 'prop-types'; 
+import css from "./Profile.module.css";
 
 export const Profile =({username, tag, location, avatar, followers, views, likes}) => {
     return (
@@ -11,7 +9,7 @@ export const Profile =({username, tag, location, avatar, followers, views, likes
         src={avatar}
         alt={username}
         className={css.avatar}
-        width="100"
+        width="130"
       />
       <p className={css.name}>{username}</p>
       <p className={css.tag}>{tag}</p>
@@ -35,14 +33,14 @@ export const Profile =({username, tag, location, avatar, followers, views, likes
   )
 }
 
-// Profile.propTypes = {
-// username: propTypes.string.isRequired,
-// tag: propTypes.string.isRequired,
-// location: propTypes.string.isRequired,
-// avatar: propTypes.string.isRequired,
-// stats: propTypes.exact({
-//     label: propTypes.string.isRequired,
-//     quantity: propTypes.number.isRequired,
-// })
+Profile.propTypes = {
+username: propTypes.string.isRequired,
+tag: propTypes.string.isRequired,
+location: propTypes.string.isRequired,
+avatar: propTypes.string.isRequired,
+stats: propTypes.exact({
+    label: propTypes.string.isRequired,
+    quantity: propTypes.number.isRequired,
+})
 
-// }
+}
