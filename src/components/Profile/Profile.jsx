@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'; 
+// import PropTypes from 'prop-types'; 
 import css from "./Profile.module.css";
 
 export const Profile =({username, tag, location, avatar,stats: { followers, views, likes}}) => {
@@ -33,14 +33,14 @@ export const Profile =({username, tag, location, avatar,stats: { followers, view
   )
 }
 
-Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  stats: PropTypes.exact({
-      label: PropTypes.string.isRequired,
-      quantity: PropTypes.number.isRequired,
-  })
+// Profile.propTypes = {
+//   username: PropTypes.string.isRequired,
+//   tag: PropTypes.string.isRequired,
+//   location: PropTypes.string.isRequired,
+//   avatar: PropTypes.string.isRequired,
+//   stats: PropTypes.exact({
+//       label: PropTypes.string.isRequired,
+//       quantity: PropTypes.number.isRequired,
+//   })
   
-  }
+//   }
